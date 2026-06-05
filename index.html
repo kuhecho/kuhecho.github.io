@@ -15,20 +15,16 @@
     <!-- Website Title -->
     <title>charles</title>
     <!-- Bootstrap core CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Custom style CSS -->
     <link href="assets/style.css" rel="stylesheet" />
   </head>
   <!-- Body -->
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
     <nav
       id="nav"
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom"
+      class="navbar navbar-expand-lg bg-dark fixed-top border-bottom"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">charles</a>
@@ -44,7 +40,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
             <li id="pjcts" class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
@@ -56,7 +55,7 @@
       </div>
     </nav>
     <!-- Header -->
-    <header class="header bg-dark text-white">
+    <header id="home" class="header text-bg-dark d-flex align-items-center vh-100 view-section">
       <div class="container text-center">
         <img
           class="mx-auto rounded-circle"
@@ -67,14 +66,48 @@
       </div>
     </header>
     <!-- Projects -->
-    <section class="page projects" id="projects">
+    <section class="page projects view-section d-none" id="projects">
       <div class="container mx-auto text-center">
-        <h1 class="mt-4">Projects</h1>
+        <h1 class="mt-4 text-dark">Projects</h1>
         <!-- Horizontal Break -->
         <hr />
         <div class="row g-4">
           <div class="col-lg-4">
-            <div class="card bg-dark text-white h-100">
+            <div class="card text-bg-dark h-100">
+              <div class="card-header">SISMO</div>
+              <a
+                class="stretched-link"
+                href="https://sismo.systems/"
+                target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="img/sismo.png"
+                  alt="sismo logo"
+              /></a>
+              <div class="card-body">
+                <p class="card-text">demo release of SISMO (Sari-sari Inventory System for Management and Operations)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-bg-dark h-100">
+              <div class="card-header">Lapuk Garage</div>
+              <a
+                class="stretched-link"
+                href="https://lapuk.netlify.app/"
+                target="_blank"
+                ><img
+                  class="card-img-top"
+                  src="img/lapuk.png"
+                  alt="lapuk logo"
+              /></a>
+              <div class="card-body">
+                <p class="card-text">unofficial website for Lapuk Motorcycle Parts & Accessories</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-bg-dark h-100">
               <div class="card-header">Healthy Lifestyle</div>
               <a
                 class="stretched-link"
@@ -91,7 +124,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-dark text-white h-100">
+            <div class="card text-bg-dark h-100">
               <div class="card-header">Pink Museum</div>
               <a
                 class="stretched-link"
@@ -104,13 +137,13 @@
               /></a>
               <div class="card-body">
                 <p class="card-text">
-                  all things sexual orientation and gender expressions.
+                  blog about the history of all things sexual orientation, gender identity and expression.
                 </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-dark text-white h-100">
+            <div class="card text-bg-dark h-100">
               <div class="card-header">JRU JHS CAT/COCC</div>
               <a
                 class="stretched-link"
@@ -129,7 +162,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-dark text-white h-100">
+            <div class="card text-bg-dark h-100">
               <div class="card-header">EcoWAR</div>
               <a
                 class="stretched-link"
@@ -148,7 +181,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-secondary h-100">
+            <div class="card text-bg-secondary h-100">
               <div class="card-header">Coming soon.</div>
               <img class="card-img-top" src="img/na.jpeg" alt="none logo" />
               <div class="card-body">
@@ -162,7 +195,7 @@
       </div>
     </section>
     <!-- Content Creation -->
-    <section class="page" id="contentcreation">
+    <section class="page view-section d-none" id="contentcreation">
       <div class="container mx-auto text-center">
         <h1 class="mt-4">Content Creation</h1>
         <!-- Horizontal Break -->
@@ -180,20 +213,14 @@
           </div>
           <div class="card-body">
             <div class="ratio ratio-16x9">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/j8HDn1lJc0A"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KFFrlmzH8Vc?si=vLkIl496eRs5W6I0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Footer -->
-    <footer class="footer bg-dark text-white text-center">
+    <footer class="footer text-bg-dark text-center mt-auto">
       <div class="container">
         <!-- Footer Social Icons-->
         <h4 class="text-uppercase mb-3">Contact Me</h4>
@@ -257,10 +284,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="assets/main.js"></script>
     <script src="assets/jquery-3.7.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
