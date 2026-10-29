@@ -1,59 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-    const sections = document.querySelectorAll('.view-section');
+document.addEventListener("DOMContentLoaded", () => {
+  const status = document.querySelector("#game-status");
+  const coin = document.querySelector(".pixel-button");
+  const toggle = document.querySelector(".theme-toggle");
+  const revealItems = document.querySelectorAll("[data-reveal]");
 
-    function showSection(id) {
-        // Handle invalid IDs by defaulting to home
-        if (!document.getElementById(id)) {
-            id = 'home';
-        }
+  coin.addEventListener("click", () => {
+    status.textContent = "PROJECTS OPEN";
+  });
 
-        sections.forEach(sec => {
-            if (sec.id === id) {
-                sec.classList.remove('d-none');
-            } else {
-                sec.classList.add('d-none');
-            }
+  toggle.addEventListener("click", () => {
+    const nightMode = document.body.classList.toggle("night");
+    toggle.setAttribute("aria-pressed", String(nightMode));
+    toggle.textContent = nightMode ? "Day mode" : "Night mode";
+  });
+
+  if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
         });
-
-        navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === `#${id}` || (href === '#' && id === 'home')) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
-        
-        window.scrollTo(0, 0);
-    }
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const href = link.getAttribute('href');
-            let targetId = href.startsWith('#') ? href.substring(1) : 'home';
-            if (!targetId) targetId = 'home'; // for href="#"
-            
-            showSection(targetId);
-            history.pushState(null, '', `#${targetId}`);
-        });
-    });
-
-    // Also handle the brand link
-    const brandLink = document.querySelector('.navbar-brand');
-    if (brandLink) {
-        brandLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            showSection('home');
-            history.pushState(null, '', '#home');
-        });
-    }
-
-    // Handle initial load based on hash
-    if (window.location.hash) {
-        showSection(window.location.hash.substring(1));
-    } else {
-        showSection('home');
-    }
+      },
+      { threshold: 0.15 }
+    );
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
 });

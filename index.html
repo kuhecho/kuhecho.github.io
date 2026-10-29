@@ -1,289 +1,140 @@
-<!DOCTYPE html>
-<html data-bs-theme="dark" lang="en">
-  <!-- Head -->
+<!doctype html>
+<html lang="en">
   <head>
-    <!-- Meta Tags-->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="icon" href="img/me.jpg" sizes="64x64" type="image/jpeg" />
-    <meta name="description" content="personal website of frank charles." />
-    <meta name="author" content="frank charles" />
-    <meta name="p:domain_verify" content="f9c246e75eb1b9527d3d2ba0a53fdef7" />
-    <!-- Website Title -->
-    <title>charles</title>
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Custom style CSS -->
-    <link href="assets/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Charles Aagliam's personal portfolio: web projects, experiments, and gaming content.">
+    <meta name="author" content="Frank Charles Aagliam">
+    <meta name="p:domain_verify" content="f9c246e75eb1b9527d3d2ba0a53fdef7">
+    <link rel="icon" href="img/me.jpg" sizes="64x64" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+    <script>document.documentElement.classList.add("js");</script>
+    <title>Charles — Player One</title>
   </head>
-  <!-- Body -->
-  <body class="d-flex flex-column min-vh-100">
-    <!-- Navigation -->
-    <nav
-      id="nav"
-      class="navbar navbar-expand-lg bg-dark fixed-top border-bottom"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">charles</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li id="pjcts" class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li id="cntnt" class="nav-item">
-              <a class="nav-link" href="#contentcreation">Content Creation</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Header -->
-    <header id="home" class="header text-bg-dark d-flex align-items-center vh-100 view-section">
-      <div class="container text-center">
-        <img
-          class="mx-auto rounded-circle"
-          src="img/me.jpg"
-          alt="ohCran"
-          title="ohCran"
-        />
-      </div>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Charles, return home">CHARLES<span class="brand__cursor" aria-hidden="true">_</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Night mode</button>
     </header>
-    <!-- Projects -->
-    <section class="page projects view-section d-none" id="projects">
-      <div class="container mx-auto text-center">
-        <h1 class="mt-4 text-dark">Projects</h1>
-        <!-- Horizontal Break -->
-        <hr />
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="card text-bg-dark h-100">
-              <div class="card-header">SISMO</div>
-              <a
-                class="stretched-link"
-                href="https://sismo.systems/"
-                target="_blank"
-                ><img
-                  class="card-img-top"
-                  src="img/sismo.png"
-                  alt="sismo logo"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">demo release of SISMO (Sari-sari Inventory System for Management and Operations)</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card text-bg-dark h-100">
-              <div class="card-header">Lapuk Garage</div>
-              <a
-                class="stretched-link"
-                href="https://lapuk.netlify.app/"
-                target="_blank"
-                ><img
-                  class="card-img-top"
-                  src="img/lapuk.png"
-                  alt="lapuk logo"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">unofficial website for Lapuk Motorcycle Parts & Accessories</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card text-bg-dark h-100">
-              <div class="card-header">Healthy Lifestyle</div>
-              <a
-                class="stretched-link"
-                href="https://ctlnhlu.github.io/Healthy-Lifestyle/"
-                target="_blank"
-                ><img
-                  class="card-img-top"
-                  src="img/healthylifestyle.png"
-                  alt="Healthy lifestyle logo"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">what we do for "being well".</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card text-bg-dark h-100">
-              <div class="card-header">Pink Museum</div>
-              <a
-                class="stretched-link"
-                href="https://pinkmuseum.wordpress.com"
-                target="_blank"
-                ><img
-                  class="card-img-top"
-                  src="img/pinkmuseum.png"
-                  alt="Pink Museum logo"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  blog about the history of all things sexual orientation, gender identity and expression.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card text-bg-dark h-100">
-              <div class="card-header">JRU JHS CAT/COCC</div>
-              <a
-                class="stretched-link"
-                href="https://sites.google.com/my.jru.edu/jrujhscatcocc2021/home"
-                target="_blank"
-                ><img
-                  class="card-img-top"
-                  src="img/CAT_COCC.png"
-                  alt="CAT/COCC logo"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  official website for CAT/COCC (Batch 2021).
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card text-bg-dark h-100">
-              <div class="card-header">EcoWAR</div>
-              <a
-                class="stretched-link"
-                href="https://ctlnhlu.github.io/ecoWAR/"
-                target="_blank"
-                ><img
-                  class="card-img-top"
-                  src="img/ecowar.png"
-                  alt="ecoWAR logo"
-              /></a>
-              <div class="card-body">
-                <p class="card-text">
-                  where we strive to keep our environment healthy.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card text-bg-secondary h-100">
-              <div class="card-header">Coming soon.</div>
-              <img class="card-img-top" src="img/na.jpeg" alt="none logo" />
-              <div class="card-body">
-                <p class="card-text">
-                  more projects will be available for public soon.
-                </p>
-              </div>
-            </div>
-          </div>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero__status" data-load style="--delay: 80ms">
+          <span>PLAYER 01</span>
         </div>
-      </div>
-    </section>
-    <!-- Content Creation -->
-    <section class="page view-section d-none" id="contentcreation">
-      <div class="container mx-auto text-center">
-        <h1 class="mt-4">Content Creation</h1>
-        <!-- Horizontal Break -->
-        <hr />
-        <div class="card">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active">Gaming</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Tutorials (coming soon)</a>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/KFFrlmzH8Vc?si=vLkIl496eRs5W6I0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
+        <div class="hero__portrait" data-load style="--delay: 180ms">
+          <img src="img/me.jpg" alt="Portrait of Charles Aagliam" width="300" height="300">
         </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer text-bg-dark text-center mt-auto">
-      <div class="container">
-        <!-- Footer Social Icons-->
-        <h4 class="text-uppercase mb-3">Contact Me</h4>
-        <p class="mb-3">fcaagliam@mymail.mapua.edu.ph</p>
-        <ul>
-          <li class="list-inline-item">
-            <a
-              href="https://www.linkedin.com/in/frankcharlesagliam/"
-              target="_blank"
-              ><img
-                src="https://i.imgur.com/PIV1dD5.png"
-                class="logo1"
-                title="LinkedIn"
-                alt="LinkedIn"
-            /></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/ctlnhlu/" target="_blank"
-              ><img
-                src="https://i.imgur.com/YT60YFn.png"
-                class="logo"
-                title="Instagram"
-                alt="instagram"
-            /></a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              rel="me"
-              href="https://mastodon.social/@dakilangnilalang"
-              target="_blank"
-              ><img
-                src="https://i.imgur.com/6MV9ol0.png"
-                class="logo"
-                title="Mastodon"
-                alt="mastodon"
-            /></a>
-          </li>
-          <li class="list-inline-item">
-            <a
-              href="https://forum.xda-developers.com/member.php?u=7156864"
-              target="_blank"
-              ><img
-                src="https://i.imgur.com/5QZanAA.png"
-                class="logo"
-                title="XDA Profile"
-                alt="xda"
-            /></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://paypal.me/ohCran" target="_blank"
-              ><img
-                src="https://i.imgur.com/qyYhRHo.png"
-                class="logo"
-                title="Paypal"
-                alt="paypal"
-            /></a>
-          </li>
+        <h1 id="hero-title" aria-label="Charles, personal web portfolio">
+          <span class="hero__name">CHARLES</span>
+        </h1>
+        <div class="hero__copy" data-load style="--delay: 320ms">
+          <p>Computer science projects, web builds, and practical experiments.</p>
+          <a class="pixel-button" href="#projects">View projects <span aria-hidden="true">→</span></a>
+        </div>
+        <dl class="hero__stats" data-load style="--delay: 440ms">
+          <div><dt>STATUS</dt><dd id="game-status" aria-live="polite">READY</dd></div>
+          <div><dt>LOCATION</dt><dd>MANILA</dd></div>
+          <div><dt>MODE</dt><dd>CS PORTFOLIO</dd></div>
+        </dl>
+      </section>
+
+      <section class="marquee" aria-label="Portfolio tagline">
+        <div class="marquee__track"><span>CODE • BUILD • SHIP • CODE • BUILD • SHIP • </span><span aria-hidden="true">CODE • BUILD • SHIP • CODE • BUILD • SHIP • </span></div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="section__intro" data-reveal>
+          <h2 id="about-title">CS PORTFOLIO.</h2>
+        </div>
+        <div class="about__grid">
+          <p class="about__statement" data-reveal>Web development, software projects, and useful experiments.</p>
+          <dl class="about__facts" data-reveal>
+            <div><dt>FOCUS</dt><dd>SOFTWARE & WEB</dd></div>
+            <div><dt>LOADOUT</dt><dd>CODE / DATA / AI</dd></div>
+            <div><dt>QUEST</dt><dd>BUILD USEFUL THINGS</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills" aria-labelledby="skills-title">
+        <div class="skills__intro" data-reveal>
+          <h2 id="skills-title">SKILL LOADOUT</h2>
+          <p>Tools I use to build computer science projects.</p>
+        </div>
+        <ul class="skills__list">
+          <li data-reveal><strong>WEB DEVELOPMENT</strong><span>HTML / CSS / JavaScript</span></li>
+          <li data-reveal><strong>SYSTEMS</strong><span>C++ / C</span></li>
+          <li data-reveal><strong>PROGRAMMING</strong><span>Python</span></li>
+          <li data-reveal><strong>DATABASES</strong><span>SQL</span></li>
+          <li data-reveal><strong>VERSION CONTROL</strong><span>Git / GitHub</span></li>
+          <li data-reveal><strong>AI-ASSISTED WORK</strong><span>Claude Code / Gemini / AI agents</span></li>
         </ul>
-      </div>
+      </section>
+
+      <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="projects__heading" data-reveal>
+          <div>
+            <h2 id="projects-title">PROJECTS</h2>
+          </div>
+          <p>Computer science and web development projects.</p>
+        </div>
+        <div class="project-wall">
+          <a class="project project--wide" href="https://sismo.systems/" target="_blank" rel="noopener noreferrer" data-reveal>
+            <img src="img/sismo.png" alt="SISMO project logo" width="800" height="450">
+            <span class="project__meta"><strong>SISMO</strong><small>Inventory system demo</small></span>
+          </a>
+          <a class="project" href="https://lapuk.netlify.app/" target="_blank" rel="noopener noreferrer" data-reveal>
+            <img src="img/lapuk.png" alt="Lapuk Garage project logo" width="800" height="450">
+            <span class="project__meta"><strong>Lapuk Garage</strong><small>Motorcycle parts site</small></span>
+          </a>
+          <a class="project" href="https://ctlnhlu.github.io/Healthy-Lifestyle/" target="_blank" rel="noopener noreferrer" data-reveal>
+            <img src="img/healthylifestyle.png" alt="Healthy Lifestyle project logo" width="800" height="450">
+            <span class="project__meta"><strong>Healthy Lifestyle</strong><small>Wellness resource</small></span>
+          </a>
+          <a class="project" href="https://pinkmuseum.wordpress.com" target="_blank" rel="noopener noreferrer" data-reveal>
+            <img src="img/pinkmuseum.png" alt="Pink Museum project logo" width="800" height="450">
+            <span class="project__meta"><strong>Pink Museum</strong><small>History blog</small></span>
+          </a>
+          <a class="project" href="https://sites.google.com/my.jru.edu/jrujhscatcocc2021/home" target="_blank" rel="noopener noreferrer" data-reveal>
+            <img src="img/CAT_COCC.png" alt="JRU JHS CAT COCC project logo" width="800" height="450">
+            <span class="project__meta"><strong>JRU JHS CAT/COCC</strong><small>Official batch site</small></span>
+          </a>
+          <a class="project" href="https://ctlnhlu.github.io/ecoWAR/" target="_blank" rel="noopener noreferrer" data-reveal>
+            <img src="img/ecowar.png" alt="EcoWAR project logo" width="800" height="450">
+            <span class="project__meta"><strong>EcoWAR</strong><small>Environmental awareness</small></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" data-reveal>LET'S BUILD SOMETHING</h2>
+        <a class="contact__email" href="mailto:fcaagliam@mymail.mapua.edu.ph" data-reveal>fcaagliam@mymail.mapua.edu.ph <span aria-hidden="true">↗</span></a>
+        <div class="contact__links" data-reveal>
+          <a href="https://www.linkedin.com/in/frankcharlesagliam/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/ctlnhlu/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a rel="me" href="https://mastodon.social/@dakilangnilalang" target="_blank" rel="noopener noreferrer">Mastodon</a>
+          <a href="https://forum.xda-developers.com/member.php?u=7156864" target="_blank" rel="noopener noreferrer">XDA</a>
+          <a href="https://paypal.me/ohCran" target="_blank" rel="noopener noreferrer">PayPal</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>THANKS FOR PLAYING</p>
+      <a href="#home">CHARLES</a>
     </footer>
-    <!-- Bootstrap core JavaScript -->
     <script src="assets/main.js"></script>
-    <script src="assets/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
